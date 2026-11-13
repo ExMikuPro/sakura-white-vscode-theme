@@ -1,0 +1,361 @@
+{
+  "source": {
+    "baseTheme": "Ayu Light Bordered",
+    "iconTheme": "catppuccin-latte",
+    "jsoncErrors": 0,
+    "globalUIEntries": 19,
+    "selectedThemeUIEntries": 148,
+    "mergedUIEntries": 153,
+    "mergedUIHexDefinitions": 150,
+    "defaultSentinels": 3,
+    "unsupportedUIEntries": [
+      "statusBar.inactiveBackground",
+      "statusBar.inactiveForeground"
+    ],
+    "textMateShorthandColors": 7,
+    "textMateRuleColors": 3,
+    "semanticColors": 9,
+    "effectiveHexDefinitions": 169,
+    "supportedHexDefinitions": 167,
+    "uniqueHexLiterals": 142
+  },
+  "output": {
+    "uiColors": 319,
+    "textMateRules": 25,
+    "semanticRules": 26
+  },
+  "uiContrastAdjustments": {
+    "editorOverviewRuler.infoForeground": {
+      "from": "#8B7EB2",
+      "to": "#61538B"
+    },
+    "editorOverviewRuler.commentForeground": {
+      "from": "#987F8F",
+      "to": "#6B5663"
+    },
+    "editorCursor.foreground": {
+      "from": "#B54777",
+      "to": "#963B63"
+    },
+    "editorBracketHighlight.foreground1": {
+      "from": "#C76694",
+      "to": "#993866"
+    },
+    "editorBracketHighlight.foreground2": {
+      "from": "#9270AF",
+      "to": "#6E4D8A"
+    },
+    "editorBracketHighlight.foreground3": {
+      "from": "#6B9A90",
+      "to": "#43625B"
+    },
+    "editorBracketHighlight.unexpectedBracket.foreground": {
+      "from": "#C85E75",
+      "to": "#9E364D"
+    },
+    "editorBracketMatch.foreground": {
+      "from": "#A44478",
+      "to": "#923D6B"
+    },
+    "descriptionForeground": {
+      "from": "#927889",
+      "to": "#6A5663"
+    },
+    "textLink.foreground": {
+      "from": "#B34C7D",
+      "to": "#933E66"
+    },
+    "icon.foreground": {
+      "from": "#A66D8B",
+      "to": "#7D4C66"
+    },
+    "errorForeground": {
+      "from": "#B65368",
+      "to": "#943F51"
+    },
+    "input.placeholderForeground": {
+      "from": "#A58B9A",
+      "to": "#6D5563"
+    },
+    "list.highlightForeground": {
+      "from": "#AD467A",
+      "to": "#953C69"
+    },
+    "activityBar.foreground": {
+      "from": "#B34C7D",
+      "to": "#933E66"
+    },
+    "activityBar.inactiveForeground": {
+      "from": "#9D8392",
+      "to": "#6C5563"
+    },
+    "sideBarTitle.foreground": {
+      "from": "#A44678",
+      "to": "#923E6B"
+    },
+    "sideBarSectionHeader.foreground": {
+      "from": "#725768",
+      "to": "#6E5464"
+    },
+    "titleBar.activeForeground": {
+      "from": "#765367",
+      "to": "#735164"
+    },
+    "titleBar.inactiveForeground": {
+      "from": "#9E8393",
+      "to": "#6D5564"
+    },
+    "tab.activeForeground": {
+      "from": "#A34273",
+      "to": "#943C69"
+    },
+    "tab.inactiveForeground": {
+      "from": "#8B7282",
+      "to": "#695663"
+    },
+    "editorLineNumber.foreground": {
+      "from": "#BFA6B4",
+      "to": "#725264"
+    },
+    "editorLineNumber.activeForeground": {
+      "from": "#A04F7B",
+      "to": "#8A446A"
+    },
+    "editorWhitespace.foreground": {
+      "from": "#E5D2DD",
+      "to": "#804A69"
+    },
+    "editorError.foreground": {
+      "from": "#C25A72",
+      "to": "#9B3950"
+    },
+    "editorWarning.foreground": {
+      "from": "#B48A4A",
+      "to": "#71572F"
+    },
+    "editorInfo.foreground": {
+      "from": "#8B7EB2",
+      "to": "#61538B"
+    },
+    "editorHint.foreground": {
+      "from": "#7FA4A0",
+      "to": "#45615E"
+    },
+    "editorInlayHint.foreground": {
+      "from": "#9B7B8F",
+      "to": "#6E5464"
+    },
+    "panelTitle.activeForeground": {
+      "from": "#B14F7E",
+      "to": "#904066"
+    },
+    "panelTitle.inactiveForeground": {
+      "from": "#927C89",
+      "to": "#685761"
+    },
+    "terminalCursor.foreground": {
+      "from": "#B54777",
+      "to": "#963B63"
+    },
+    "terminal.ansiRed": {
+      "from": "#BA5B78",
+      "to": "#943E59"
+    },
+    "terminal.ansiGreen": {
+      "from": "#4B8C76",
+      "to": "#366454"
+    },
+    "terminal.ansiYellow": {
+      "from": "#A77F42",
+      "to": "#72572D"
+    },
+    "terminal.ansiBlue": {
+      "from": "#6A7DB0",
+      "to": "#485988"
+    },
+    "terminal.ansiMagenta": {
+      "from": "#AB5D9B",
+      "to": "#864578"
+    },
+    "terminal.ansiCyan": {
+      "from": "#598B96",
+      "to": "#3E6169"
+    },
+    "terminal.ansiWhite": {
+      "from": "#FAEFF5",
+      "to": "#9D316C"
+    },
+    "terminal.ansiBrightBlack": {
+      "from": "#9A8792",
+      "to": "#675760"
+    },
+    "terminal.ansiBrightRed": {
+      "from": "#D57596",
+      "to": "#A13158"
+    },
+    "terminal.ansiBrightGreen": {
+      "from": "#76A993",
+      "to": "#3E6252"
+    },
+    "terminal.ansiBrightYellow": {
+      "from": "#C4A063",
+      "to": "#70562A"
+    },
+    "terminal.ansiBrightBlue": {
+      "from": "#8B9AC8",
+      "to": "#465993"
+    },
+    "terminal.ansiBrightMagenta": {
+      "from": "#CE85BB",
+      "to": "#913A7B"
+    },
+    "terminal.ansiBrightCyan": {
+      "from": "#82A8AF",
+      "to": "#416066"
+    },
+    "terminal.ansiBrightWhite": {
+      "from": "#FFFFFF",
+      "to": "#5B5B5B"
+    },
+    "gitDecoration.addedResourceForeground": {
+      "from": "#578773",
+      "to": "#406355"
+    },
+    "gitDecoration.modifiedResourceForeground": {
+      "from": "#B5648B",
+      "to": "#8C4366"
+    },
+    "gitDecoration.deletedResourceForeground": {
+      "from": "#BF6372",
+      "to": "#973E4D"
+    },
+    "editorBracketHighlight.foreground4": {
+      "from": "#97628E",
+      "to": "#784E71"
+    },
+    "editorBracketHighlight.foreground5": {
+      "from": "#A77F42",
+      "to": "#72572D"
+    },
+    "editorBracketHighlight.foreground6": {
+      "from": "#6A7DB0",
+      "to": "#485988"
+    },
+    "activityBarTop.foreground": {
+      "from": "#B34C7D",
+      "to": "#933E66"
+    },
+    "activityBarTop.inactiveForeground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "textPreformat.foreground": {
+      "from": "#806098",
+      "to": "#6C5181"
+    },
+    "textSeparator.foreground": {
+      "from": "#E8C2D5",
+      "to": "#983969"
+    },
+    "list.errorForeground": {
+      "from": "#A53F57",
+      "to": "#9A3B51"
+    },
+    "list.warningForeground": {
+      "from": "#80602D",
+      "to": "#735628"
+    },
+    "inputValidation.infoForeground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "notificationsErrorIcon.foreground": {
+      "from": "#A53F57",
+      "to": "#9A3B51"
+    },
+    "notificationsWarningIcon.foreground": {
+      "from": "#80602D",
+      "to": "#735628"
+    },
+    "notificationsInfoIcon.foreground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "editorGhostText.foreground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "editorCodeLens.foreground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "editorMultiCursor.primary.foreground": {
+      "from": "#B54777",
+      "to": "#963B63"
+    },
+    "editorMultiCursor.secondary.foreground": {
+      "from": "#806098",
+      "to": "#6C5181"
+    },
+    "editorOverviewRuler.errorForeground": {
+      "from": "#A53F57",
+      "to": "#9A3B51"
+    },
+    "editorOverviewRuler.warningForeground": {
+      "from": "#80602D",
+      "to": "#735628"
+    },
+    "peekViewTitleDescription.foreground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "gitDecoration.untrackedResourceForeground": {
+      "from": "#477961",
+      "to": "#3B6450"
+    },
+    "gitDecoration.ignoredResourceForeground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "gitDecoration.conflictingResourceForeground": {
+      "from": "#A53F57",
+      "to": "#9A3B51"
+    },
+    "gitDecoration.submoduleResourceForeground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "gitDecoration.renamedResourceForeground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "breadcrumb.foreground": {
+      "from": "#806878",
+      "to": "#695663"
+    },
+    "debugConsole.infoForeground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "debugConsole.warningForeground": {
+      "from": "#80602D",
+      "to": "#735628"
+    },
+    "debugConsole.errorForeground": {
+      "from": "#A53F57",
+      "to": "#9A3B51"
+    },
+    "editorInlayHint.typeForeground": {
+      "from": "#705080",
+      "to": "#6F4F7E"
+    },
+    "editorInlayHint.parameterForeground": {
+      "from": "#76566F",
+      "to": "#705269"
+    },
+    "editor.findMatchBackground": {
+      "from": "#F1BBD1",
+      "to": "#F5D2E1"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "sakura-white-theme",
+  "version": "0.1.0",
+  "description": "A readable light theme with cream white, sakura pink, berry and soft purple.",
+  "scripts": {
+    "test": "node scripts/validate-theme.mjs",
+    "validate": "node scripts/validate-theme.mjs",
+    "test:grammar": "node scripts/test-grammars.mjs",
+    "test:integration": "node scripts/test-install.mjs",
+    "package": "npm run validate && vsce package --no-dependencies --out dist/sakura-white-theme-0.1.0.vsix",
+    "check:package": "node scripts/check-package.mjs"
+  },
+  "keywords": [
+    "sakura",
+    "light",
+    "pink",
+    "cream",
+    "theme"
+  ],
+  "author": "Sakura White Theme contributors",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^4.1.1",
+    "jsonc-parser": "^3.3.1",
+    "vscode-oniguruma": "^2.0.1",
+    "vscode-textmate": "^9.3.2",
+    "yauzl": "^3.4.0"
+  },
+  "displayName": "Sakura White Theme",
+  "publisher": "ExMikuPro",
+  "engines": {
+    "vscode": "^1.85.0",
+    "node": ">=22"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExMikuPro/sakura-white-vscode-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ExMikuPro/sakura-white-vscode-theme/issues"
+  },
+  "homepage": "https://github.com/ExMikuPro/sakura-white-vscode-theme#readme",
+  "contributes": {
+    "themes": [
+      {
+        "id": "Sakura White",
+        "label": "Sakura White",
+        "uiTheme": "vs",
+        "path": "./themes/sakura-white-color-theme.json"
+      }
+    ]
+  },
+  "overrides": {
+    "@vscode/vsce": {
+      "minimatch": "^11.0.1"
+    }
+  }
+}

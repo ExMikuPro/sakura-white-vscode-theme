@@ -1,0 +1,259 @@
+[
+  {
+    "language": "Go",
+    "scope": "source.go",
+    "file": "sample.go",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 4,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "Python",
+    "scope": "source.python",
+    "file": "sample.py",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 3,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "Rust",
+    "scope": "source.rust",
+    "file": "sample.rs",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 3,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "JavaScript",
+    "scope": "source.js",
+    "file": "sample.js",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 3,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "TypeScript",
+    "scope": "source.ts",
+    "file": "sample.ts",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 7,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 8,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 12,
+        "text": "5",
+        "rule": "Numeric overrides"
+      }
+    ]
+  },
+  {
+    "language": "JSON",
+    "scope": "source.json",
+    "file": "sample.json",
+    "probes": [
+      {
+        "line": 2,
+        "text": "name",
+        "rule": "JSON and YAML keys"
+      },
+      {
+        "line": 2,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 3,
+        "text": "5",
+        "rule": "Numeric overrides"
+      }
+    ]
+  },
+  {
+    "language": "YAML",
+    "scope": "source.yaml",
+    "file": "sample.yaml",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "name",
+        "rule": "JSON and YAML keys"
+      },
+      {
+        "line": 2,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "HTML",
+    "scope": "text.html.derivative",
+    "file": "sample.html",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "section",
+        "rule": "Tags and components"
+      },
+      {
+        "line": 2,
+        "text": "blossom",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "CSS",
+    "scope": "source.css",
+    "file": "sample.css",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 2,
+        "text": "blossom",
+        "rule": "CSS selectors"
+      },
+      {
+        "line": 2,
+        "text": "5",
+        "rule": "Numeric overrides"
+      }
+    ]
+  },
+  {
+    "language": "Markdown",
+    "scope": "text.html.markdown",
+    "file": "sample.md",
+    "probes": [
+      {
+        "line": 1,
+        "text": "Sakura",
+        "rule": "Markdown headings"
+      },
+      {
+        "line": 3,
+        "text": "soft",
+        "rule": "Markdown strong"
+      },
+      {
+        "line": 3,
+        "text": "readable",
+        "rule": "Markdown emphasis"
+      },
+      {
+        "line": 5,
+        "text": "bloom",
+        "rule": "Markdown inline code"
+      }
+    ]
+  },
+  {
+    "language": "Shell",
+    "scope": "source.shell",
+    "file": "sample.sh",
+    "probes": [
+      {
+        "line": 2,
+        "text": "Sakura",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "echo",
+        "rule": "Shell commands and expansions"
+      },
+      {
+        "line": 3,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  }
+]
