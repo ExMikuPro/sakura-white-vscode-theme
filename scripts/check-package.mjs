@@ -1,10 +1,11 @@
 import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 import yauzl from 'yauzl';
 import { createHash } from 'node:crypto';
 const filename=new URL('../dist/sakura-white-theme-0.1.0.vsix',import.meta.url);
 const expected=['[Content_Types].xml','extension.vsixmanifest','extension/package.json','extension/readme.md','extension/README.zh-CN.md','extension/changelog.md','extension/LICENSE.txt','extension/THIRD_PARTY_NOTICES.md','extension/themes/sakura-white-color-theme.json'];
-const zip=await new Promise((resolve,reject)=>yauzl.open(filename.pathname,{lazyEntries:true},(err,z)=>err?reject(err):resolve(z)));
+const zip=await new Promise((resolve,reject)=>yauzl.open(fileURLToPath(filename),{lazyEntries:true},(err,z)=>err?reject(err):resolve(z)));
 const files=[];
 await new Promise((resolve,reject)=>{
   zip.on('error',reject);zip.on('end',resolve);zip.on('entry',entry=>{
