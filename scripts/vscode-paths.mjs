@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { downloadAndUnzipVSCode } from '@vscode/test-electron';
+import { downloadAndUnzipVSCode, resolveCliPathFromVSCodeExecutablePath } from '@vscode/test-electron';
 export async function vscodePaths() {
   const executable=process.env.VSCODE_EXECUTABLE_PATH || await downloadAndUnzipVSCode(process.env.VSCODE_VERSION || 'stable');
   const base=path.dirname(executable);
@@ -22,7 +22,8 @@ export async function vscodePaths() {
     app=find(base,5);if(!app)throw new Error(`Cannot locate VS Code application resources. Directories: ${JSON.stringify(seen)}`);
   }
   // 1.85's official CLI wrapper requires this vendor startup flag in node mode.
-  const wrapper=path.join(app,'bin',process.platform==='win32'?'code.cmd':'code');
-  const cliFlags=fs.existsSync(wrapper)&&fs.readFileSync(wrapper,'utf8').includes('--ms-enable-electron-run-as-node')?['--ms-enable-electron-run-as-node']:[];
+  const wrappers=[resolveCliPathFromVSCodeExecutablePath(executable),path.join(app,'bin',process.platform==='win32'?'code.cmd':'code')];
+  const wrapper=wrappers.find(file=>fs.existsSync(file));
+  const cliFlags=wrapper&&fs.readFileSync(wrapper,'utf8').includes('--ms-enable-electron-run-as-node')?['--ms-enable-electron-run-as-node']:[];
   return {executable,app,extensions:path.join(app,'extensions'),cli:path.join(app,'out/cli.js'),cliFlags};
 }
