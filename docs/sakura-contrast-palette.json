@@ -1,0 +1,12 @@
+{
+  "keyword": "#A62562",
+  "type": "#6941A1",
+  "function": "#245B91",
+  "string": "#276349",
+  "number": "#7D4B21",
+  "comment": "#515D69",
+  "variable": "#414A5A",
+  "property": "#47587A",
+  "macro": "#84435C",
+  "operator": "#625068"
+}

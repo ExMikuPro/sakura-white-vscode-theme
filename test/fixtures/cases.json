@@ -18,6 +18,51 @@
         "line": 4,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 3,
+        "text": "func",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 8,
+        "text": "struct",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 8,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 26,
+        "text": "interface",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 26,
+        "text": "Bloomer",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 3,
+        "text": "string",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 14,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 22,
+        "text": "Bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 20,
+        "text": "5",
+        "rule": "Numeric overrides"
       }
     ]
   },
@@ -40,6 +85,46 @@
         "line": 3,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 2,
+        "text": "def",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 7,
+        "text": "class",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 15,
+        "text": "property",
+        "rule": "Language annotations and attributes"
+      },
+      {
+        "line": 12,
+        "text": "name",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 10,
+        "text": "5",
+        "rule": "Numeric overrides"
+      },
+      {
+        "line": 24,
+        "text": "greet",
+        "rule": "Python call names"
+      },
+      {
+        "line": 24,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 9,
+        "text": "name",
+        "rule": "Variables and parameters"
       }
     ]
   },
@@ -62,6 +147,61 @@
         "line": 3,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 2,
+        "text": "fn",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 8,
+        "text": "struct",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 21,
+        "text": "trait",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 21,
+        "text": "Bloomer",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 24,
+        "text": "T",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 3,
+        "text": "format",
+        "rule": "Decorators and macros"
+      },
+      {
+        "line": 18,
+        "text": "println",
+        "rule": "Decorators and macros"
+      },
+      {
+        "line": 7,
+        "text": "derive",
+        "rule": "Language annotations and attributes"
+      },
+      {
+        "line": 7,
+        "text": "Debug",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 14,
+        "text": "flower",
+        "rule": "Variables and parameters"
+      },
+      {
+        "line": 16,
+        "text": "5",
+        "rule": "Numeric overrides"
       }
     ]
   },
@@ -84,6 +224,52 @@
         "line": 3,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 2,
+        "text": "function",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 7,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 9,
+        "text": "name",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 9,
+        "text": "name",
+        "rule": "Variables and parameters",
+        "occurrence": 2
+      },
+      {
+        "line": 14,
+        "text": "greet",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 19,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 18,
+        "text": "Blossom",
+        "rule": "JavaScript constructor names"
+      },
+      {
+        "line": 18,
+        "text": "Cherry",
+        "rule": "Strings"
+      },
+      {
+        "line": 18,
+        "text": "flower",
+        "rule": "Variables and parameters"
       }
     ]
   },
@@ -116,6 +302,46 @@
         "line": 12,
         "text": "5",
         "rule": "Numeric overrides"
+      },
+      {
+        "line": 2,
+        "text": "interface",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 3,
+        "text": "name",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 13,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 18,
+        "text": "5",
+        "rule": "Numeric overrides"
+      },
+      {
+        "line": 19,
+        "text": "label",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 19,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 8,
+        "text": "message",
+        "rule": "Variables and parameters"
+      },
+      {
+        "line": 12,
+        "text": "flower",
+        "rule": "Variables and parameters"
       }
     ]
   },
@@ -138,6 +364,11 @@
         "line": 3,
         "text": "5",
         "rule": "Numeric overrides"
+      },
+      {
+        "line": 2,
+        "text": "name",
+        "rule": "JSON and YAML keys"
       }
     ]
   },
@@ -160,6 +391,11 @@
         "line": 2,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 3,
+        "text": "5",
+        "rule": "Numeric overrides"
       }
     ]
   },
@@ -182,6 +418,16 @@
         "line": 2,
         "text": "blossom",
         "rule": "Strings"
+      },
+      {
+        "line": 2,
+        "text": "section",
+        "rule": "Tags and components"
+      },
+      {
+        "line": 2,
+        "text": "class",
+        "rule": "Properties and attributes"
       }
     ]
   },
@@ -204,6 +450,16 @@
         "line": 2,
         "text": "5",
         "rule": "Numeric overrides"
+      },
+      {
+        "line": 2,
+        "text": "color",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 2,
+        "text": "#ad477a",
+        "rule": "Numbers and language constants"
       }
     ]
   },
@@ -231,6 +487,21 @@
         "line": 5,
         "text": "bloom",
         "rule": "Markdown inline code"
+      },
+      {
+        "line": 8,
+        "text": "function",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 8,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 8,
+        "text": "Sakura",
+        "rule": "Strings"
       }
     ]
   },
@@ -253,6 +524,279 @@
         "line": 3,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 5,
+        "text": "count",
+        "rule": "Variables and parameters"
+      },
+      {
+        "line": 4,
+        "text": "5",
+        "rule": "Strings",
+        "note": "1.85 classifies plain assignment numbers as numeric; stable classifies them as unquoted strings. Assert the exact color for the emitted scope.",
+        "rulesByScope": {
+          "constant.numeric": "Numeric overrides",
+          "string.unquoted.shell": "Strings"
+        }
+      },
+      {
+        "line": 6,
+        "text": "1",
+        "rule": "Numeric overrides",
+        "note": "Assert the numeric token actually emitted by the Shell grammar, not a string assignment."
+      }
+    ]
+  },
+  {
+    "language": "C",
+    "scope": "source.c",
+    "file": "sample.c",
+    "probes": [
+      {
+        "line": 1,
+        "text": "macros",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "PETALS",
+        "rule": "Decorators and macros"
+      },
+      {
+        "line": 8,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 3,
+        "text": "define",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 4,
+        "text": "struct",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 11,
+        "text": "int",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 13,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "name",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 3,
+        "text": "5",
+        "rule": "Numeric overrides"
+      },
+      {
+        "line": 4,
+        "text": "Blossom",
+        "rule": "Default code foreground"
+      }
+    ]
+  },
+  {
+    "language": "C++",
+    "scope": "source.cpp",
+    "file": "sample.cpp",
+    "probes": [
+      {
+        "line": 1,
+        "text": "templates",
+        "rule": "Comments"
+      },
+      {
+        "line": 4,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 3,
+        "text": "typename",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 4,
+        "text": "class",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 8,
+        "text": "nodiscard",
+        "rule": "Language annotations and attributes"
+      },
+      {
+        "line": 13,
+        "text": "Blossom",
+        "rule": "Types and namespaces",
+        "unscopedFallback": {
+          "vscodeVersion": "1.85.0",
+          "scopes": [
+            "source.cpp",
+            "meta.function.definition.cpp",
+            "meta.body.function.definition.cpp"
+          ]
+        },
+        "note": "1.85 emits no type scope at this declaration use. Require exact neutral fallback instead of tinting a whole function body; a semantic type token overrides it to iris."
+      },
+      {
+        "line": 14,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 17,
+        "text": "garden",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 18,
+        "text": "1",
+        "rule": "Numeric overrides"
+      }
+    ]
+  },
+  {
+    "language": "C#",
+    "scope": "source.cs",
+    "file": "sample.cs",
+    "probes": [
+      {
+        "line": 1,
+        "text": "attributes",
+        "rule": "Comments"
+      },
+      {
+        "line": 5,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "Bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 8,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 5,
+        "text": "class",
+        "rule": "Keywords and storage"
+      },
+      {
+        "line": 5,
+        "text": "T",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 6,
+        "text": "Name",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 7,
+        "text": "int",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 7,
+        "text": "Petals",
+        "rule": "Properties and attributes"
+      },
+      {
+        "line": 7,
+        "text": "5",
+        "rule": "Numeric overrides"
+      },
+      {
+        "line": 13,
+        "text": "Bloom",
+        "rule": "Functions and methods"
+      }
+    ]
+  },
+  {
+    "language": "Java",
+    "scope": "source.java",
+    "file": "sample.java",
+    "probes": [
+      {
+        "line": 1,
+        "text": "annotations",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "toString",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      },
+      {
+        "line": 7,
+        "text": "Override",
+        "rule": "Language annotations and attributes"
+      },
+      {
+        "line": 8,
+        "text": "String",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 12,
+        "text": "Blossom",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 12,
+        "text": "String",
+        "rule": "Language primitive and reference types"
+      },
+      {
+        "line": 13,
+        "text": "println",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 5,
+        "text": "5",
+        "rule": "Numeric overrides"
       }
     ]
   }
