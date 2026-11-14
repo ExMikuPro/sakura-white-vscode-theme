@@ -33,8 +33,8 @@ This project has not been published to the Marketplace. The manifest publisher i
 ## What is included
 
 - 319 explicit workbench colors covering editors, tabs, sidebars, menus, notifications, quick input, terminal ANSI colors, diff, peek, debug, settings and notebooks.
-- 30 TextMate rules and 26 semantic rules, with semantic highlighting enabled.
-- Language grammar checks for Go, Python, Rust, C, C++, C#, Java, JavaScript, TypeScript, JSON, YAML, HTML, CSS, Markdown and Shell (132 token assertions).
+- 31 TextMate rules and 26 semantic rules, with semantic highlighting enabled.
+- Language grammar checks for Go, Python, Rust, C, C++, C#, Java, JavaScript, TypeScript, JSON, YAML, HTML, CSS, Markdown and Shell (136 token assertions).
 - Declarative theme data only. No activation code, runtime dependencies, layout or font changes. File icons remain your choice.
 
 The palette was adapted from the supplied Profile's overrides for **Ayu Light Bordered**, rather than copying Ayu's theme file. Missing UI colors were authored independently. VS Code supplies its standard light defaults for any unlisted color IDs, including IDs added by future versions or other extensions. Ayu and Catppuccin are not required.

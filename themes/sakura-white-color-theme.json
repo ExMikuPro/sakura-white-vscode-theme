@@ -325,6 +325,13 @@
   },
   "tokenColors": [
     {
+      "name": "Default code foreground",
+      "settings": {
+        "foreground": "#414A5A",
+        "fontStyle": ""
+      }
+    },
+    {
       "name": "Comments",
       "scope": [
         "comment",
@@ -708,8 +715,8 @@
     "struct": "#6941A1",
     "typeParameter": "#6941A1",
     "variable": "#414A5A",
-    "variable.readonly": "#7D4B21",
-    "property.readonly": "#7D4B21",
+    "variable.readonly": "#414A5A",
+    "property.readonly": "#47587A",
     "macro": "#84435C",
     "decorator": "#84435C",
     "label": "#414A5A",

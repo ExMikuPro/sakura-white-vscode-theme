@@ -22,7 +22,9 @@ exports.run=async function(){
  const typesSeen=new Set();for(let i=0;i<tokens.data.length;i+=5)typesSeen.add(legend.tokenTypes[tokens.data[i+3]]);
  for(const type of ['interface','function','property','parameter'])assert.ok(typesSeen.has(type),`Missing semantic provider type: ${type}`);
  for(const [type,color]of Object.entries({interface:'#6941A1',function:'#245B91',property:'#47587A',parameter:'#414A5A'}))assert.equal(theme.semanticTokenColors[type],color);
- const semanticProvider={language:'typescript',tokenCount:tokens.data.length/5,typesSeen:[...typesSeen].sort()};
+ assert.equal(theme.semanticTokenColors['variable.readonly'],'#414A5A');assert.equal(theme.semanticTokenColors['property.readonly'],'#47587A');
+ const readonlyIndex=legend.tokenModifiers.indexOf('readonly');assert.ok(readonlyIndex>=0);let readonlyVariableCount=0,readonlyPropertyCount=0;for(let i=0;i<tokens.data.length;i+=5)if(tokens.data[i+4]&(1<<readonlyIndex)){if(legend.tokenTypes[tokens.data[i+3]]==='variable')readonlyVariableCount++;if(legend.tokenTypes[tokens.data[i+3]]==='property')readonlyPropertyCount++;}assert.ok(readonlyVariableCount>0,'Fixture must exercise actual readonly variable tokens');assert.ok(readonlyPropertyCount>0,'Fixture must exercise actual readonly property tokens');
+ const semanticProvider={readonlyVariableCount,readonlyPropertyCount,language:'typescript',tokenCount:tokens.data.length/5,typesSeen:[...typesSeen].sort()};
  await vscode.commands.executeCommand('workbench.view.explorer');
  const report={vscodeVersion:vscode.version,installedVersion:installed.packageJSON.version,activeTheme:'Sakura White',kind:'Light',ayuInstalled:false,semanticHighlighting:true,semanticProvider,uiColors:Object.keys(theme.colors).length,scope:'VSIX installation, contribution discovery, workspace theme selection, active light kind; real TS semantic-provider output and theme role agreement; not renderer color pixel assertions or a full LSP matrix'};
  fs.writeFileSync(process.env.SAKURA_REPORT,JSON.stringify(report,null,2)+'\n');

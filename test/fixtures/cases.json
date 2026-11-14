@@ -265,6 +265,11 @@
         "line": 18,
         "text": "Cherry",
         "rule": "Strings"
+      },
+      {
+        "line": 18,
+        "text": "flower",
+        "rule": "Variables and parameters"
       }
     ]
   },
@@ -327,6 +332,16 @@
         "line": 19,
         "text": "Sakura",
         "rule": "Strings"
+      },
+      {
+        "line": 8,
+        "text": "message",
+        "rule": "Variables and parameters"
+      },
+      {
+        "line": 12,
+        "text": "flower",
+        "rule": "Variables and parameters"
       }
     ]
   },
@@ -587,6 +602,11 @@
         "line": 3,
         "text": "5",
         "rule": "Numeric overrides"
+      },
+      {
+        "line": 4,
+        "text": "Blossom",
+        "rule": "Default code foreground"
       }
     ]
   },

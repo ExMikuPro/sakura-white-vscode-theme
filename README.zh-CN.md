@@ -33,8 +33,8 @@ code --install-extension sakura-white-theme-0.1.0.vsix
 ## 功能
 
 - 319 个 UI 颜色，覆盖编辑器、侧栏、标签页、菜单、通知、快速输入、终端 ANSI、差异、预览、调试、设置和笔记本界面。
-- 30 条 TextMate 规则、26 条 Semantic Token 规则，开启语义高亮。
-- 针对 Go、Python、Rust、C、C++、C#、Java、JavaScript / TypeScript、JSON / YAML、HTML / CSS、Markdown、Shell 进行真实语法检查，共 132 个 token 断言。
+- 31 条 TextMate 规则、26 条 Semantic Token 规则，开启语义高亮。
+- 针对 Go、Python、Rust、C、C++、C#、Java、JavaScript / TypeScript、JSON / YAML、HTML / CSS、Markdown、Shell 进行真实语法检查，共 136 个 token 断言。
 - 仅声明式主题数据，无运行时代码和运行时依赖，不调整布局、字体或文件图标。
 
 主题从原 Profile 的 Ayu Light Bordered 覆盖配置转换而来，没有复制 Ayu 主题文件。缺失的 UI 颜色另行编写，未列出的颜色使用 VS Code 的标准浅色默认值，包括未来版本或其他扩展新增的颜色 ID。无需安装 Ayu 或 Catppuccin。

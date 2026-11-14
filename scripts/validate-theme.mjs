@@ -34,7 +34,7 @@ for (const key of ['editor.background','editor.foreground','terminal.background'
 const styles = new Set(['','italic','bold','underline','strikethrough']);
 for (const rule of theme.tokenColors) {
   assert.ok(rule.name && rule.settings); const scopes = typeof rule.scope === 'string' ? [rule.scope] : rule.scope;
-  assert.ok(Array.isArray(scopes) && scopes.length); for (const scope of scopes) assert.match(scope, /^[\w., +:()|\->]+$/, `Invalid scope ${scope}`);
+  if(rule.scope===undefined){assert.equal(rule.name,'Default code foreground');assert.equal(rule.settings.foreground,'#414A5A');assert.equal(theme.tokenColors.filter(r=>r.scope===undefined).length,1);}else{assert.ok(Array.isArray(scopes) && scopes.length);for(const scope of scopes)assert.match(scope,/^[\w., +:()|\->]+$/,`Invalid scope ${scope}`);}
   assert.deepEqual(Object.keys(rule.settings).sort(), ['fontStyle','foreground']); assert.match(rule.settings.foreground, hex);
   for (const style of rule.settings.fontStyle.split(' ')) assert.ok(styles.has(style));
 }

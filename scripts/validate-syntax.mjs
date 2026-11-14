@@ -8,7 +8,7 @@ function lab(hex) {
 }
 export function validateSyntax(theme) {
   const palette=JSON.parse(fs.readFileSync(new URL('../docs/sakura-contrast-palette.json',import.meta.url),'utf8'));
-  const roles={keyword:['keyword'],type:['class','struct','interface','enum','type','typeParameter','namespace'],function:['function','method','event'],string:['string','regexp'],number:['number','enumMember','variable.readonly','property.readonly'],comment:['comment'],variable:['variable','parameter','label'],property:['property'],macro:['macro','decorator'],operator:['operator']};
+  const roles={keyword:['keyword'],type:['class','struct','interface','enum','type','typeParameter','namespace'],function:['function','method','event'],string:['string','regexp'],number:['number','enumMember'],comment:['comment'],variable:['variable','parameter','label','variable.readonly'],property:['property','property.readonly'],macro:['macro','decorator'],operator:['operator']};
   const tm={keyword:'Keywords and storage',type:'Types and namespaces',function:'Functions and methods',string:'Strings',number:'Numeric overrides',comment:'Comments',variable:'Variables and parameters',property:'Properties and attributes',macro:'Decorators and macros',operator:'Operators and punctuation'};
   for(const [role,selectors]of Object.entries(roles)) {
     assert.equal(theme.tokenColors.find(r=>r.name===tm[role])?.settings.foreground,palette[role],`TextMate ${role}`);
@@ -18,6 +18,9 @@ export function validateSyntax(theme) {
     const x=lab(palette[a]),y=lab(palette[b]);const delta=Math.hypot(...x.map((v,i)=>v-y[i]));assert.ok(delta>=min,`${a}/${b} CIE76 ${delta.toFixed(2)} < ${min}`);return {roles:[a,b],minimum:min,deltaE76:Number(delta.toFixed(2))};
   });
   const variable=lab(palette.variable);assert.ok(Math.hypot(variable[1],variable[2])<20,'Ordinary variables must stay neutral');
+  assert.equal(theme.semanticTokenColors['variable.readonly'],palette.variable,'Readonly bindings must not become copper');
+  assert.equal(theme.semanticTokenColors['property.readonly'],palette.property,'Readonly properties keep the property color');
+  assert.equal(theme.tokenColors.find(r=>r.scope===undefined)?.settings.foreground,palette.variable,'Unclassified code keeps the neutral variable foreground');
   const deprecated=theme.semanticTokenColors['*.deprecated'];assert.deepEqual(deprecated,{strikethrough:true},'A modifier must not replace the semantic foreground');
   assert.equal(theme.semanticHighlighting,true);assert.equal(theme.type,'light');
   console.log(`Syntax roles agree across TextMate/semantic tokens. Function/type ΔE76: ${separations[0].deltaE76}.`);
