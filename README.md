@@ -2,7 +2,23 @@
 
 [简体中文](README.zh-CN.md)
 
-A standalone light theme for VS Code: cream white surfaces, pale sakura pink selections, berry keywords and soft purple types. Version **0.1.0** supports VS Code **1.85.0+** on macOS, Windows and Linux.
+A standalone light theme for VS Code: cream white surfaces, pale sakura pink selections, berry keywords and iris-purple types. Version **0.1.0** supports VS Code **1.85.0+** on macOS, Windows and Linux.
+
+## Preview
+
+Real VS Code captures with Sakura Contrast syntax colors. The cream and sakura-pink UI stays soft; berry keywords, iris types, blue functions, leaf-green strings and copper numbers give code distinct roles.
+
+![Sakura White with Go, Python and Rust editors, a pink Explorer and an ANSI terminal palette](docs/images/sakura-white-overview.png)
+
+C, C++, C# and Java: macros, attributes, annotations, generics and properties.
+
+![C and C++ on the left, C# and Java on the right, using Sakura Contrast syntax colors](docs/images/sakura-white-syntax.png)
+
+JavaScript and TypeScript: selection, cursor and real property completion.
+
+![JavaScript string selection beside TypeScript completion, with the Sakura White terminal palette below](docs/images/sakura-white-details.png)
+
+[Palette, capture details and grammar limits](docs/SAKURA-CONTRAST.md). Screenshots are repository documentation assets and stay outside the VSIX. The supplied PNG icon is included in the extension.
 
 ## Install
 
@@ -17,8 +33,8 @@ This project has not been published to the Marketplace. The manifest publisher i
 ## What is included
 
 - 319 explicit workbench colors covering editors, tabs, sidebars, menus, notifications, quick input, terminal ANSI colors, diff, peek, debug, settings and notebooks.
-- 25 TextMate rules and 26 semantic rules, with semantic highlighting enabled.
-- Language grammar checks for Go, Python, Rust, JavaScript, TypeScript, JSON, YAML, HTML, CSS, Markdown and Shell.
+- 30 TextMate rules and 26 semantic rules, with semantic highlighting enabled.
+- Language grammar checks for Go, Python, Rust, C, C++, C#, Java, JavaScript, TypeScript, JSON, YAML, HTML, CSS, Markdown and Shell (132 token assertions).
 - Declarative theme data only. No activation code, runtime dependencies, layout or font changes. File icons remain your choice.
 
 The palette was adapted from the supplied Profile's overrides for **Ayu Light Bordered**, rather than copying Ayu's theme file. Missing UI colors were authored independently. VS Code supplies its standard light defaults for any unlisted color IDs, including IDs added by future versions or other extensions. Ayu and Catppuccin are not required.

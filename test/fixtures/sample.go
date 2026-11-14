@@ -21,3 +21,7 @@ func main() {
     }
     println(flower.Bloom())
 }
+
+// Interfaces keep types distinct from functions
+type Bloomer interface { Bloom() string }
+var _ Bloomer = Blossom{}

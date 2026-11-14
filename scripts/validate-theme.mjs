@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import { parse } from 'jsonc-parser';
+import { validateSyntax } from './validate-syntax.mjs';
 export const root = new URL('../', import.meta.url);
 export function readJSONC(path) {
   const errors = []; const value = parse(fs.readFileSync(new URL(path, root), 'utf8'), errors, { allowTrailingComma: true });
@@ -19,6 +20,8 @@ export function contrast(fg, bg) {
   const a = luminance(composite(fg, bg)), b = luminance(bg); return (Math.max(a, b) + .05) / (Math.min(a, b) + .05);
 }
 const theme = readJSONC('themes/sakura-white-color-theme.json');
+const syntaxReport=validateSyntax(theme);
+fs.mkdirSync(new URL('dist/',root),{recursive:true});fs.writeFileSync(new URL('dist/syntax-report.json',root),JSON.stringify(syntaxReport,null,2)+'\n');
 const pkg = readJSONC('package.json');
 assert.deepEqual(Object.keys(theme).sort(), ['$schema','name','type','colors','tokenColors','semanticHighlighting','semanticTokenColors'].sort());
 assert.equal(theme.type, 'light'); assert.equal(theme.semanticHighlighting, true);

@@ -13,3 +13,5 @@ final class Blossom<T> {
         System.out.println(flower);
     }
 }
+
+enum Season { SPRING, SUMMER }

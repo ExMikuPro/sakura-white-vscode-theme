@@ -1,5 +1,17 @@
 # Verification record / 实际验证记录
 
+## Sakura Contrast update — 2026-11-14
+
+The current update has 30 TextMate rules / 26 semantic rules and **671/671** passing contrast pairs. Stable 1.146.0 and minimum 1.85.0 grammars each pass **132 assertions across 15 languages**; one exact unscoped C++ fallback on 1.85 is recorded explicitly. The original 319 workbench colors are unchanged.
+
+The stable integration test also received 24 real TypeScript semantic tokens, including interface/function/method/property/parameter/variable types. Actual GUI token inspection confirmed function `#245B91` (6.96:1), type `#6941A1` (7.22:1) and property `#47587A` (7.04:1), with the corresponding semantic theme rule taking effect. Three real 2880×1620 previews were recaptured.
+
+The supplied PNG icon is registered and included. The package allowlist now has 10 files; preview PNGs stay out of the VSIX. Both packaged READMEs have verified HTTPS image targets on main. These URLs will become live after merge; no Marketplace publication has taken place.
+
+See [Sakura Contrast](SAKURA-CONTRAST.md) for the palette, lexical grammar limitations, capture provenance and packaging behavior. CI adds a Linux 1.85.0 runtime job alongside stable Windows/macOS/Linux jobs; use PR checks for actual remote outcomes. The original verification record below describes the pre-Contrast version.
+
+## Original 0.1.0 verification
+
 Local verification: **2026-11-14 (Asia/Tokyo)**, macOS arm64, Node.js 26.13.0, npm 11.20.0, VSCE 4.1.1.
 
 | Check | Actual result |

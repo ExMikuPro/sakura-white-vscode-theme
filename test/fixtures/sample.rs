@@ -17,3 +17,8 @@ fn main() {
     };
     println!("{:?}", flower);
 }
+
+trait Bloomer {
+    fn bloom(&self) -> String;
+}
+fn echo<T>(value: T) -> T { value }

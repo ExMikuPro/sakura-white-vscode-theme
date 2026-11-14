@@ -19,3 +19,6 @@ class Blossom:
 
 flower = Blossom("Cherry")
 print(flower.label)
+
+# Calls preserve argument colors
+message = greet("Sakura")

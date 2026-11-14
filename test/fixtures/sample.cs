@@ -13,3 +13,5 @@ public static class Garden {
         Console.WriteLine(flower.Bloom());
     }
 }
+
+public enum Season { Spring = 1, Summer = 2 }

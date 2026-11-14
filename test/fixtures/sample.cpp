@@ -13,3 +13,7 @@ int main() {
     Blossom<std::string> flower{"Cherry"};
     return flower.bloom().empty();
 }
+
+namespace garden {
+enum class Season { Spring = 1 };
+}
