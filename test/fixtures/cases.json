@@ -255,5 +255,113 @@
         "rule": "Strings"
       }
     ]
+  },
+  {
+    "language": "C",
+    "scope": "source.c",
+    "file": "sample.c",
+    "probes": [
+      {
+        "line": 1,
+        "text": "macros",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "PETALS",
+        "rule": "Decorators and macros"
+      },
+      {
+        "line": 8,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "C++",
+    "scope": "source.cpp",
+    "file": "sample.cpp",
+    "probes": [
+      {
+        "line": 1,
+        "text": "templates",
+        "rule": "Comments"
+      },
+      {
+        "line": 4,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "C#",
+    "scope": "source.cs",
+    "file": "sample.cs",
+    "probes": [
+      {
+        "line": 1,
+        "text": "attributes",
+        "rule": "Comments"
+      },
+      {
+        "line": 5,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "Bloom",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 8,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
+  },
+  {
+    "language": "Java",
+    "scope": "source.java",
+    "file": "sample.java",
+    "probes": [
+      {
+        "line": 1,
+        "text": "annotations",
+        "rule": "Comments"
+      },
+      {
+        "line": 3,
+        "text": "Blossom",
+        "rule": "Types and namespaces"
+      },
+      {
+        "line": 8,
+        "text": "toString",
+        "rule": "Functions and methods"
+      },
+      {
+        "line": 9,
+        "text": "Sakura",
+        "rule": "Strings"
+      }
+    ]
   }
 ]

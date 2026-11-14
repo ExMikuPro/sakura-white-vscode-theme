@@ -11,3 +11,6 @@ function bloom(flower: Blossom): string {
 
 const flower: Blossom = { name: "Cherry", petals: 5 };
 console.log(bloom(flower));
+
+// Property completion: name and petals
+flower.name;
