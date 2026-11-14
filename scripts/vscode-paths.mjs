@@ -21,5 +21,8 @@ export async function vscodePaths() {
     }
     app=find(base,5);if(!app)throw new Error(`Cannot locate VS Code application resources. Directories: ${JSON.stringify(seen)}`);
   }
-  return {executable,app,extensions:path.join(app,'extensions'),cli:path.join(app,'out/cli.js')};
+  // 1.85's official CLI wrapper requires this vendor startup flag in node mode.
+  const wrapper=path.join(app,'bin',process.platform==='win32'?'code.cmd':'code');
+  const cliFlags=fs.existsSync(wrapper)&&fs.readFileSync(wrapper,'utf8').includes('--ms-enable-electron-run-as-node')?['--ms-enable-electron-run-as-node']:[];
+  return {executable,app,extensions:path.join(app,'extensions'),cli:path.join(app,'out/cli.js'),cliFlags};
 }
